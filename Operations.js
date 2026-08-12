@@ -36,4 +36,4 @@ let str3 = str1 + str2
    
 //------> String-to-number conversion is confusing because computers view strings and numbers through entirely different data architectures, leading to unexpected behavior during automatic type coercion, parsing, and formatting.
 
-console.log(+"")
+mdn
