@@ -54,7 +54,7 @@ users[1].email
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
-
+// =========+++++++++++===++ json api ==============+++++++======
 const course = {
     coursename: "js in hindi",
     price: "999",
@@ -63,7 +63,7 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course  // de costractor means we can courseInstructor chya jage var instructor he pan takhu shakto anni o/p saME yenar 
 
 // console.log(courseInstructor);
 console.log(instructor);
@@ -79,3 +79,8 @@ console.log(instructor);
     {},
     {}
 ]
+
+
+
+// for study json format 
+// and we can leran to = api for me 

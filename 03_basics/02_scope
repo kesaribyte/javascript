@@ -14,6 +14,8 @@ if (true) {
 // console.log(c);
 
 
+// ===========neasted scope======
+
 function one(){
     const username = "hitesh"
 
@@ -27,7 +29,7 @@ function one(){
 
 }
 
-// one()
+// one() 
 
 if (true) {
     const username = "hitesh"
@@ -52,7 +54,7 @@ function addone(num){
 
 
 
-addTwo(5)
+addTwo(5)                   // ase var thevalya var run nahi hot apn varchya eg mde te hot kar ki aapun variables use kel ahe
 const addTwo = function(num){
     return num + 2
 }
