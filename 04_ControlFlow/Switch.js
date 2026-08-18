@@ -6,6 +6,7 @@
 //     default:
 //         break;
 // }
+// ========  switch case ka use karyach?? kitivela if else statement use kar nar forexample month tr aaplya la if else 12 vela use krav lagnar na tha's why we use  
 
 const month = "march"
 

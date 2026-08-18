@@ -23,7 +23,7 @@ const temperature = 41
 
 // const balance = 1000
 
-// if (balance > 500) console.log("test"),console.log("test2");
+// if (balance > 500) console.log("test"),console.log("test2");  don't write code like this 
 
 // if (balance < 500) {
 //     console.log("less than 500");
@@ -43,10 +43,10 @@ const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if (userLoggedIn && debitCard && 2==3) {
-    console.log("Allow to buy course");
+if (userLoggedIn && debitCard && 2==3) {      //&&  he 2 statement la check kart he "And sathi ast"
+    console.log("Allow to buy course");       // && je 2 ahet te true pahije
 }
 
-if (loggedInFromGoogle || loggedInFromEmail) {
-    console.log("User logged in");
+if (loggedInFromGoogle || loggedInFromEmail) {   // "||" this sign is OR 
+    console.log("User logged in");               // || 1 true asel tari pan run hoin
 }
