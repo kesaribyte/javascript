@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> chia aur bascuit </h1>
+    <button id="stop">stop</button>
+    
+<script> 
+    const  sayOmraje = function(){
+        console.log("Omraje");
+    }
+
+    const changename = function(){
+        document.querySelector("h1").innerHTML = "javascript learn form chai aur code"
+    }
+    
+    const changeme = setTimeout(changename, 2000)
+
+    document.querySelector("#stop").addEventListener('click', function(){
+        clearTimeout(changeme)
+        console.log('stoped')
+    })
+
+    </script>
+</body>
+</html>
