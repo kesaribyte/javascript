@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Start Stop</title>
 </head>
-<body>
-    <h1> chia aur bascuit </h1>
-    <button id="start">start</button>
-    <button id="stop">stop</button>
 
+<body>
+    <h1>Chai aur Javascript</h1>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        const start = document.querySelector('#start');
+        const stop = document.querySelector('#stop');
+
+        const sayDate = function () {
+            console.log("hi", Date.now());
+        };
+
+        let intervalId;
+
+        start.addEventListener('click', function () {
+            intervalId = setInterval(sayDate, 1000);
+            console.log("Started");
+        });
+
+        stop.addEventListener('click', function () {
+            clearInterval(intervalId);
+            console.log("Stopped");
+        });
+    </script>
 </body>
 </html>
