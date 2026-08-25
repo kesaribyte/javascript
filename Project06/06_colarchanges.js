@@ -1,21 +1,25 @@
 const Start = document.querySelector("#start");
 const Stop = document.querySelector("#stop");
 
-let intervaleId;
+let intervalId = null;
 
 function changeColor() {
-    const color = "rgb(" +
-        Math.floor(Math.random() * 256) + "," +
-        Math.floor(Math.random() * 256) + "," +
-        Math.floor(Math.random() * 256) + ")";
+    const color = `rgb(
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)}
+    )`;
 
     document.body.style.backgroundColor = color;
 }
 
 Start.addEventListener("click", function () {
-    intervaleId = setInterval(changeColor, 1000);
+    if (intervalId === null) {
+        intervalId = setInterval(changeColor, 1000);
+    }
 });
 
 Stop.addEventListener("click", function () {
-    clearInterval(intervaleId);
+    clearInterval(intervalId);
+    intervalId = null;
 });
