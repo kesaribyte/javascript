@@ -3,11 +3,19 @@ const Stop = document.querySelector("#stop");
 
 let intervaleId;
 
+function changeColor() {
+    const color = "rgb(" +
+        Math.floor(Math.random() * 256) + "," +
+        Math.floor(Math.random() * 256) + "," +
+        Math.floor(Math.random() * 256) + ")";
+
+    document.body.style.backgroundColor = color;
+}
+
 Start.addEventListener("click", function () {
+    intervaleId = setInterval(changeColor, 1000);
+});
 
-    intervaleId = setInterval(function () {
-
-    }, 1000);
-
-    console.log(Start);
+Stop.addEventListener("click", function () {
+    clearInterval(intervaleId);
 });
